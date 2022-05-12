@@ -11,6 +11,14 @@ The easiest way to launch dancing demo is to use the SD card image I provided. H
 cd ~/mini_pupper_scripts
 sudo ./exec.sh
 # now you are supposed to enter a docker container
+roslaunch servo_interface calibrate.launch
+```
+Through this script, you can calibrate the angle of every servo in one turn. Just input the angles.</br>
+The hip and shank should be horizontal, and the ham should be vertical.</br>
+![1]{imgs/calibrate.jpg}
+After calibration, you can make Mini Pupper dancing.
+```sh
+# still in docker container
 roslaunch mini_pupper_dance dance.launch
 ```
 
