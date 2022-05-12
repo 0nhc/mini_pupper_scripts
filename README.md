@@ -42,10 +42,16 @@ I have modified this package to display IP address on the screen
 
 ```sh
 cd ~
-sudo rm -rf mini_pupper_ros_bsp
-git clone https://github.com/0nhc/mini_pupper_ros_bsp.git
-cd mini_pupper_ros_bsp/mangdang
+sudo rm -rf minipupper_ros_bsp
+git clone https://github.com/0nhc/minipupper_ros_bsp.git
+cd minipupper_ros_bsp/mangdang
 sudo sh install.sh
 sudo reboot
+```
+
+If you want to display the IP address again, just
+
+```sh
+python3 ~/minipupper_ros_bsp/mangdang/LCD/demo.py
 ```
 
