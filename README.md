@@ -22,7 +22,7 @@ After calibration, you can make Mini Pupper dancing.
 roslaunch mini_pupper_dance dance.launch
 ```
 
-# 2. Go Through the Configuration Steps
+# 2. Configure the SD card by yourself
 
 ## 2.1 Install Docker for Raspberry Pi 4B
 
