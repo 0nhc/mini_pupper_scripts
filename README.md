@@ -71,7 +71,7 @@ sudo sh install.sh
 sudo reboot
 ```
 
-If you want to update the IP address displayed after changing network, just
+If you want to update the displayed IP address after changing network, just
 
 ```sh
 python3 ~/minipupper_ros_bsp/mangdang/LCD/demo.py
