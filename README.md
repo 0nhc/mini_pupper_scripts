@@ -1,10 +1,22 @@
 # Mini Pupper Scripts
 
 * This repository will guide you how to install docker and our modified docker image on Mini Pupper
-
 * It also works on Ubuntu 22.04, but our hardware drivers for Ubuntu 22.04 is not finished yet, so temporarily we will use it on Ubuntu 20.04
 
-# 1. Install Docker for Raspberry Pi 4B
+The easiest way to launch dancing demo is to use the SD card image I provided. However if you want to go through the configuration steps, you can also follow the instruction below.
+
+# 1. Use the SD card image
+
+```sh
+cd ~/mini_pupper_scripts
+sudo ./exec.sh
+# now you are supposed to enter a docker container
+roslaunch mini_pupper_dance dance.launch
+```
+
+# 2. Go Through the Configuration Steps
+
+## 2.1 Install Docker for Raspberry Pi 4B
 
 ```sh
 sudo apt-get update
@@ -13,13 +25,13 @@ curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 ```
 
-# 2. Pull our Docker Image for Mini Pupper
+## 2.2 Pull our Docker Image for Mini Pupper
 
 ```sh
 sudo docker pull 0nhc/mnpp:test
 ```
 
-# 3. Create Docker Container from this Image
+## 2.3 Create Docker Container from this Image
 
 ```sh
 cd ~
@@ -36,7 +48,7 @@ sudo ./exec.sh
 roslaunch servo_interface calibrate.launch
 ```
 
-# 4. Change BSP Package
+## 2.4 Change BSP Package
 
 I have modified this package to display IP address on the screen
 
@@ -49,9 +61,8 @@ sudo sh install.sh
 sudo reboot
 ```
 
-If you want to update the IP address displayed, just
+If you want to display the IP address again, just
 
 ```sh
 python3 ~/minipupper_ros_bsp/mangdang/LCD/demo.py
 ```
-
