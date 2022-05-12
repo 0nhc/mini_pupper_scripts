@@ -71,8 +71,9 @@ sudo sh install.sh
 sudo reboot
 ```
 
-If you want to update the displayed IP address after changing network, just
+If you want to update the displayed IP address immediately after changing network, just
 
 ```sh
 python3 ~/minipupper_ros_bsp/mangdang/LCD/demo.py
 ```
+or you can reboot Mini Pupper so that the IP address displayed on the screen will be automatically updated
