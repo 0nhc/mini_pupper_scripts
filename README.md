@@ -36,3 +36,16 @@ sudo ./exec.sh
 roslaunch servo_interface calibrate.launch
 ```
 
+# 4. Change BSP Package
+
+I have modified this package to display IP address on the screen
+
+```sh
+cd ~
+sudo rm -rf mini_pupper_ros_bsp
+git clone https://github.com/0nhc/mini_pupper_ros_bsp.git
+cd mini_pupper_ros_bsp/mangdang
+sudo sh install.sh
+sudo reboot
+```
+
